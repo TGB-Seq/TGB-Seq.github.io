@@ -1,6 +1,6 @@
 |Rank|Method|Test MRR (%)|Contact|References|Date|
 |--|--|--|--|--|--|
-|1|**TGN**|48.57±4.70|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://arxiv.org/abs/2006.10637), [Code](N/A)|October 29th, 2024|
+|1|**TGN**|50.53±1.72|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://arxiv.org/abs/2006.10637), [Code](N/A)|October 29th, 2024|
 |2|**JODIE**|35.77±1.16|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://snap.stanford.edu/jodie/), [Code](N/A)|October 29th, 2024|
 |3|**DyRep**|29.58±0.78|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://openreview.net/forum?id=HyePrhR5KX), [Code](N/A)|October 29th, 2024|
 |4|**GraphMixer**|21.31±0.14|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://openreview.net/forum?id=ayPPc0SyLv1), [Code](N/A)|October 29th, 2024|
