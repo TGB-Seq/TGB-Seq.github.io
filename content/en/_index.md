@@ -10,7 +10,7 @@ title: TGB-Seq
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
   Datasets Info <i class="fab fa-github ms-2 "></i>
 </a>
-{{< blocks/link-down color="info" >}}
+{{< blocks/link-down >}}
 {{< /blocks/cover >}}
 
 
