@@ -1,43 +1,41 @@
-name: deploy
+name: Deployment to GitHub Pages
 
 on:
-    push: 
+  workflow_dispatch:
+  push:
+    branches:
+      - master  # <-- specify the branch you want to deploy from
+  pull_request:
+
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v2
-              with:
-                  submodules: true
-                  fetch-depth: 0
+  deploy:
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
 
-            - name: Setup Hugo
-              uses: peaceiris/actions-hugo@v2
-              with:
-                  hugo-version: "latest"
-                  extended: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.125.5'
+          extended: true
 
-            - name: Setup Node
-              uses: actions/setup-node@v3
-              with:
-                node-version: '18'
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
 
-            - name: Install Dependencies
-              run: |
-                npm install -g postcss-cli
-                npm install -g autoprefixer
-                npm install -g postcss
+      - run: npm ci
+      - run: hugo --baseURL https://tgb-seq.github.io --minify
 
-            - name: Build Web
-              run: hugo --minify
-
-            - name: Deploy Web
-              uses: peaceiris/actions-gh-pages@v3
-              with:
-                  PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-                  EXTERNAL_REPOSITORY: TGB-Seq/TGB-Seq.github.io
-                  PUBLISH_BRANCH: master
-                  PUBLISH_DIR: ./public
-                  commit_message: ${{ github.event.head_commit.message }}
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        if: ${{ github.ref == 'refs/heads/master' }} # <-- specify same branch as above here
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
