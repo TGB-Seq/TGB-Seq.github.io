@@ -64,7 +64,7 @@ menu:
         <div class="card h-100 border-0">
           <img src="/images/team/yeyuhang.jpg" class="card-img-top rounded" alt="Yuhang Ye">
           <div class="card-body px-0">
-            <h4 class="card-title mb-1"><a href="https://luyi256.github.io/" class="text-primary">Yuhang Ye</a></h4>
+            <h4 class="card-title mb-1">Yuhang Ye</h4>
             <p class="card-text">Huawei Poisson Lab, Huawei Technology Ltd.</p>
           </div>
         </div>
@@ -73,7 +73,7 @@ menu:
         <div class="card h-100 border-0">
           <img src="/images/team/yuezixuan.jpg" class="card-img-top rounded" alt="Zixuan Yue">
           <div class="card-body px-0">
-            <h4 class="card-title mb-1"><a href="https://luyi256.github.io/" class="text-primary">Zixuan Yue</a></h4>
+            <h4 class="card-title mb-1">Zixuan Yue</h4>
             <p class="card-text">Huawei Poisson Lab, Huawei Technology Ltd.</p>
           </div>
         </div>
