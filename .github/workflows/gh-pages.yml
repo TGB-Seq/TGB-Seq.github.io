@@ -1,8 +1,7 @@
 name: deploy
 
 on:
-    push: master
-    pull_request: master
+    push: 
 
 jobs:
     build:
