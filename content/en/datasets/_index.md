@@ -3,9 +3,8 @@ title: Datasets
 linkTitle: Datasets
 menu: {main: {weight: 10}}
 ---
-## Overview
 ## ML-20M 
-**Graph**: ML-20M [1] is a widely used benchmark dataset in recommendation research, derived from the MovieLens website. It contains movie rating data, where each record includes the rating score of a user, ranging from 1 to 5, for a specific movie along with the timestamp of the rating. While the ratings represent explicit feedback, we transform this data into implicit feedback for our analysis, following [2]. Consequently, the ML-20M network is represented as a bipartite graph where users and movies serve as nodes, and an edge represents a user's rating of a movie at a given time. 
+**Graph**: `ML-20M`[1] is a widely used benchmark dataset in recommendation research, derived from the MovieLens website. It contains movie rating data, where each record includes the rating score of a user, ranging from 1 to 5, for a specific movie along with the timestamp of the rating. While the ratings represent explicit feedback, we transform this data into implicit feedback for our analysis, following [2]. Consequently, the ML-20M network is represented as a bipartite graph where users and movies serve as nodes, and an edge represents a user's rating of a movie at a given time. 
 
 **Task**: The task is to predict whether a given user will interact with a given item at a given time.
 
@@ -16,7 +15,7 @@ menu: {main: {weight: 10}}
 
 ---
 ## Taobao
-**Graph**: Taobao [1,2,3,4] is a user behavior dataset derived from the e-commerce platform Taobao. It contains user click data on products from November 25, 2017, to December 3, 2017. The dataset is a bipartite graph where users and products are nodes, and an edge represents a user's click on a product at a given time.
+**Graph**: `Taobao` [1,2,3,4] is a user behavior dataset derived from the e-commerce platform Taobao. It contains user click data on products from November 25, 2017, to December 3, 2017. The dataset is a bipartite graph where users and products are nodes, and an edge represents a user's click on a product at a given time.
 
 **Task**: The task is to predict whether a given user will interact with a given item at a given time.
 
@@ -31,7 +30,7 @@ menu: {main: {weight: 10}}
 
 ---
 ## Yelp
-**graph**: Yelp [1] is a business review dataset sourced from Yelp, a prominent platform for business recommendations, including restaurants, bars, and beauty salons. It contains user reviews of businesses from 2018 to 2022. The dataset is a bipartite graph where users and businesses are nodes, and an edge represents a user's review of a business at a given time.
+**graph**: `Yelp` [1] is a business review dataset sourced from Yelp, a prominent platform for business recommendations, including restaurants, bars, and beauty salons. It contains user reviews of businesses from 2018 to 2022. The dataset is a bipartite graph where users and businesses are nodes, and an edge represents a user's review of a business at a given time.
 
 **Task**: The task is to predict whether a given user will interact with a given item at a given time.
 
@@ -40,7 +39,7 @@ menu: {main: {weight: 10}}
 
 ---
 ## GoogleLocal
-**graph**: GoogleLocal [1,2] is a business review dataset derived from Google Maps, with a smaller scale compared to Yelp. It contains user reviews and ratings of local businesses. Following the settings for the ML-20M dataset, we treat these ratings as implicit feedback. The GoogleLocal dataset is a bipartite graph where users and businesses are nodes, and an edge indicates a user's review of a business at a given time.
+**graph**: `GoogleLocal` [1,2] is a business review dataset derived from Google Maps, with a smaller scale compared to Yelp. It contains user reviews and ratings of local businesses. Following the settings for the ML-20M dataset, we treat these ratings as implicit feedback. The GoogleLocal dataset is a bipartite graph where users and businesses are nodes, and an edge indicates a user's review of a business at a given time.
 
 **Task**: The task is to predict whether a given user will interact with a given item at a given time.
 
@@ -51,7 +50,7 @@ menu: {main: {weight: 10}}
 
 ---
 ## Flickr
-**Graph**: Flickr [1] is a ``Who-To-Follow'' social network dataset derived from Flickr, a photo-sharing platform with social networking features. 
+**Graph**: `Flickr` [1] is a "Who-To-Follow" social network dataset derived from Flickr, a photo-sharing platform with social networking features. 
 The dataset was crawled daily from November 2 to December 3, 2006, and from February 3 to March 18, 2007 by [1]. It is estimated to represent 25% of the entire Flickr network. The Flickr dataset is a non-bipartite graph where users are nodes, and an edge represents the friendship established between users at a given time. 
 
 **Task**: The task is to predict whether a given user will follow another specified user at a particular time.
@@ -61,7 +60,7 @@ The dataset was crawled daily from November 2 to December 3, 2006, and from Febr
 
 ---
 ## YouTube
-**Graph**: YouTube[1] is a ``Who-To-Follow'' social network dataset derived from YouTube, a video-sharing platform that includes a user subscription network. The YouTube dataset is a non-bipartite graph where users are nodes, and an edge indicates the subscription of a user to another user at a given time.
+**Graph**: `YouTube`[1] is a "Who-To-Follow" social network dataset derived from YouTube, a video-sharing platform that includes a user subscription network. The YouTube dataset is a non-bipartite graph where users are nodes, and an edge indicates the subscription of a user to another user at a given time.
 
 **Task**: The task is to predict whether a given user will follow another specified user at a particular time.
 
@@ -70,7 +69,7 @@ The dataset was crawled daily from November 2 to December 3, 2006, and from Febr
 
 ---
 ## Patent
-**Graph**: Patent[1] is a citation network dataset of U.S. patents, capturing the citation relationships between patents from 1963 to 1999. The dataset is organized as a non-bipartite graph where patents are nodes, and an edge represents a citation made by one patent to another at the time of publication. 
+**Graph**: `Patent`[1] is a citation network dataset of U.S. patents, capturing the citation relationships between patents from 1963 to 1999. The dataset is organized as a non-bipartite graph where patents are nodes, and an edge represents a citation made by one patent to another at the time of publication. 
 
 **Task**: The task is to predict whether a given patent will cite another given patent, given several of their established citations.
 
@@ -79,7 +78,7 @@ The dataset was crawled daily from November 2 to December 3, 2006, and from Febr
 
 ---
 ## WikiLink
-**Graph**: WikiLink[1,2] is a web link network dataset derived from Wikipedia, containing the hyperlink relationships between Wikipedia pages. This dataset is a non-bipartite graph, where pages are nodes and edges indicate hyperlinks established from one page to another at a given time. 
+**Graph**: `WikiLink`[1,2] is a web link network dataset derived from Wikipedia, containing the hyperlink relationships between Wikipedia pages. This dataset is a non-bipartite graph, where pages are nodes and edges indicate hyperlinks established from one page to another at a given time. 
 
 **Task**: The task is to predict whether a given page will link to another given page at a given time.
 

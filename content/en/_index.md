@@ -2,76 +2,50 @@
 title: TGB-Seq
 ---
 
-{{< blocks/cover title="TGB-Seq: Temporal Graph Benchmark with Sequential Dynamics" image_anchor="top" height="full" center_image="/images/full_logo.svg" >}}
-<p class="lead mt-5">A challenging benchmark for future link prediction. Try it!</p>
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
-  Get Started <i class="fas fa-arrow-alt-circle-right ms-2"></i>
-</a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
-  Datasets Info <i class="fab fa-github ms-2 "></i>
-</a>
-{{< blocks/link-down >}}
+{{< blocks/cover title="TGB-Seq: Temporal Graph Benchmark with Sequential Dynamics" image_anchor="top" height="min" center_image="/images/full_logo.svg" >}}
+<div class="mx-auto text-center">
+    <p class="lead mt-3 description">A comprehensive collection of eight benchmark datasets for evaluating future link prediction models.</p>
+    <p class="lead">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSchjDliqcIO2FYY0qmjenHcLSNvqa-0poV1PrbRGph2XwZ8RA/viewform" class="submit-link">
+            Submit Your Model Results <i class="fas fa-arrow-right"></i>
+        </a>
+    </p>
+</div>
 {{< /blocks/cover >}}
 
-
-{{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge
-temperature, chair size, and bed softness metrics! You can even find out who's
-been eating **your** porridge.
-
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example
-to create your own real websites with [Docsy](https://docsy.dev))
-{{% /blocks/lead %}}
-
-
-{{% blocks/section color="dark" type="row" %}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
-
-Please follow this space for updates!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the second section
-{.h1 .text-center}
-{{% /blocks/section %}}
-
-
-{{% blocks/section type="row" %}}
-
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!"
-    url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!"
-    url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the another section
-{.h1 .text-center}
-{{% /blocks/section %}}
+<div class="container-fluid features-section">
+    <div class="container py-5">
+        <div class="row mx-0">
+            <div class="col-lg-4 mb-4">
+                <div class="feature-box">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-network-wired fa-3x"></i>
+                        <h3 class="mt-3">Challenging Datasets</h3>
+                    </div>
+                    <p class="feature-text">TGB-Seq offers datasets curated from diverse real-world dynamic interaction systems, inherently featuring complex and intricate sequential dynamics.</p>
+                    <a class="btn btn-secondary" href="/datasets/">View Datasets</a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="feature-box">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-rocket fa-3x"></i>
+                        <h3 class="mt-3">Quick Start</h3>
+                    </div>
+                    <p class="feature-text">TGB-Seq is available as a convenient pip package, offering seamless access to dataset downloading, negative sample generation and evaluation. We provide a quick-start example built on DyGLib, enabling easy integration.</p>
+                    <a class="btn btn-secondary" href="/get-started/">Get Started</a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="feature-box">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-chart-line fa-3x"></i>
+                        <h3 class="mt-3">Unified Evaluation</h3>
+                    </div>
+                    <p class="feature-text">TGB-Seq adopts a standardized evaluation protocol with fixed dataset splits, generating 100 negative samples per test instance and computing the MRR metric for consistent and reliable performance assessment.</p>
+                    <a class="btn btn-secondary" href="/leaderboard/">View Leaderboards</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

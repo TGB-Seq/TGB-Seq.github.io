@@ -11,7 +11,7 @@ TGB-Seq comprises eight temporal graph datasets that exhibit intricate sequentia
 
 You can install TGB-Seq using Python package manager pip.
 
-```bash
+```shell
 pip install tgb-seq
 ```
 
@@ -29,7 +29,7 @@ pip install tgb-seq
 ### Quick Start
 Get started with TGB-Seq using this quick-start example built on [DyGLib](https://github.com/yule-BUAA/DyGLib). Just follow the commands below to begin your journey with TGB-Seq! 🚀🚀🚀
 
-```bash
+```shell
 pip install tgb-seq
 git clone git@github.com:TGB-Seq/TGB-Seq.git
 cd examples
