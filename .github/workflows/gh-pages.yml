@@ -5,6 +5,10 @@ on:
     branches:
       - master  # <-- specify the branch you want to deploy from
   pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
@@ -40,3 +44,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+d
