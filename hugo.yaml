@@ -1,4 +1,4 @@
-baseURL: https://example.docsy.dev
+baseURL: https://tgb-seq.github.io/
 title: TGB-Seq Benchmark
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
