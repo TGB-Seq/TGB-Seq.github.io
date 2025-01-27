@@ -22,7 +22,7 @@ title: TGB-Seq
                         <i class="fas fa-network-wired fa-3x"></i>
                         <h3 class="mt-3">Challenging Datasets</h3>
                     </div>
-                    <p class="feature-text">TGB-Seq offers datasets curated from diverse real-world dynamic interaction systems, inherently featuring complex and intricate sequential dynamics.</p>
+                    <p class="feature-text">TGB-Seq offers datasets curated from diverse real-world dynamic interaction systems, inherently featuring intricate sequential dynamics and fewer repeated edges.</p>
                     <a class="btn btn-secondary" href="/datasets/">View Datasets</a>
                 </div>
             </div>
