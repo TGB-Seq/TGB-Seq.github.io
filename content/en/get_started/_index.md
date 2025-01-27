@@ -46,14 +46,21 @@ For example, to load the Flickr dataset to `./data/`, run the following code:
 from tgb_seq.LinkPred.dataloader import TGBSeqLoader
 data=TGBSeqLoader("Flickr", "./data/")
 ```
-Then, Flickr.csv and Flickr_test_ns.npy will be downloaded in `./data/Flickr/`. The arrays of source nodes, destination nodes, interaction times, negative destination nodes for the test set can be accessed as follows.
+Then, Flickr.csv and Flickr_test_ns.npy will be downloaded from Hugging Face automatically into `./data/Flickr/`. The arrays of source nodes, destination nodes, interaction times, negative destination nodes for the test set can be accessed as follows.
 
 ```python
 src_node_ids=data.src_node_ids
 dst_node_ids=data.dst_node_ids
-node_interact_times=data.time
-test_ns=data.test_ns
+node_interact_times=data.node_interact_times
+test_negative_samples=data.negative_samples
 ```
+
+If you encounter any network errors when connecting to Hugging Face, you can use the Hugging Face mirror site to download the dataset. To do so, run the following command in your terminal:
+```shell
+export HF_ENDPOINT=https://hf-mirror.com
+```
+
+We also provide all the TGB-Seq datasets on [Google Drive](https://drive.google.com/drive/folders/1qoGtASTbYCO-bSWAzSqbSY2YgHr9hUhK?usp=sharing) and their original datasets [here](https://drive.google.com/drive/folders/1_WkYtmpGtxxf2XzzLlOzyzn6WUFkiGD-?usp=sharing).
 
 ### Evaluator
 Up to now, all the TGB-Seq datasets are evaluated by the MRR metric. The evaluator takes `positive_probabilities` with size as `(batch_size,)` and `negative_probabilities` with size as `(batch_size x number_of_negatives)` as inputs and outputs the rank of eash positive sample with size as `(batch_size)`.
