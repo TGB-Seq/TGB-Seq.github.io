@@ -1,7 +1,10 @@
 |Rank|Method|Test MRR (%)|Contact|References|Date|
 |--|--|--|--|--|--|
-|1|**GraphMixer**|18.97±2.54|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://openreview.net/forum?id=ayPPc0SyLv1), [Code](N/A)|October 29th, 2024|
-|2|**DyGFormer**|15.31±3.64|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://arxiv.org/abs/2303.13047), [Code](N/A)|October 29th, 2024|
-|3|**CAWN**|12.34±0.47|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](http://snap.stanford.edu/caw/), [Code](N/A)|October 29th, 2024|
-|4|**TCL**|10.60±1.75|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://arxiv.org/abs/2105.07944), [Code](N/A)|October 29th, 2024|
-|5|**TGAT**|8.49±0.18|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://arxiv.org/pdf/2002.07962), [Code](N/A)|October 29th, 2024|
+|1|**JODIE**|27.95±0.82|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://snap.stanford.edu/jodie/), [Code](N/A)|October 29th, 2024|
+|2|**TGN**|25.73±3.71|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://arxiv.org/abs/2006.10637), [Code](N/A)|October 29th, 2024|
+|3|**DyRep**|21.10±1.15|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://openreview.net/forum?id=HyePrhR5KX), [Code](N/A)|October 29th, 2024|
+|4|**GraphMixer**|18.97±2.54|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://openreview.net/forum?id=ayPPc0SyLv1), [Code](N/A)|October 29th, 2024|
+|5|**DyGFormer**|14.20±2.93|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://arxiv.org/abs/2303.13047), [Code](N/A)|October 29th, 2024|
+|6|**CAWN**|12.34±0.47|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](http://snap.stanford.edu/caw/), [Code](N/A)|October 29th, 2024|
+|7|**TCL**|10.60±1.75|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://arxiv.org/abs/2105.07944), [Code](N/A)|October 29th, 2024|
+|8|**TGAT**|8.49±0.18|[TGB-Seq Team](yilu@ruc.edu.cn)|[Paper](https://arxiv.org/pdf/2002.07962), [Code](N/A)|October 29th, 2024|
